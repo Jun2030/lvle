@@ -1,0 +1,92 @@
+/**
+ * 具体配置参考：https://www.electron.build/configuration/configuratiomn
+ */
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.lvle-bajiao.color",
+  "artifactName": "${productName}_${version}_${arch}.${ext}",
+  "asar": true,
+  "productName": "Lvle",
+  "compression": "maximum",
+  "directories": {
+    "output": "release/${version}"
+  },
+  "files": [
+    "dist/**/*",
+    "!dist/main/index.dev.js",
+    "!docs/**/*",
+    "!tests/**/*",
+    "!release/**/*"
+  ],
+  "mac": {
+    "bundleVersion": "1.0",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "notarize": false,
+    "icon": "public/icons/icon.icns",
+    "type": "distribution",
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["x64", "arm64"]
+      }
+    ],
+    "artifactName": "${productName}_${version}_${arch}.${ext}"
+  },
+  "dmg": {
+    "contents": [
+      {
+        "x": 410,
+        "y": 150,
+        "type": "link",
+        "path": "/Applications"
+      },
+      {
+        "x": 130,
+        "y": 150,
+        "type": "file"
+      }
+    ],
+    "sign": false
+  },
+  "win": {
+    "icon": "public/icons/icon.ico",
+    "target": [
+      // {
+      //   "target": "appx",
+      //   "arch": "x64",
+      // },
+      // {
+      //   "target": "zip",
+      //   "arch": "x64",
+      // },
+      // {
+      //   "target": "portable",
+      //   "arch": "x64",
+      // },
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "${productName}_${version}_${arch}_Setup.${ext}"
+  },
+  "portable": {
+    "artifactName": "${productName} ${version}_${arch}_Portable.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": true
+  },
+  "linux": {
+    "executableName": "lvle",
+    "icon": "public/icons",
+    "category": "Utility",
+    "target": [
+      "AppImage"
+    ]
+  },
+  "copyright": "Copyright ⓒ ${new Date().getFullYear()} ${author}"
+}

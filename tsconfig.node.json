@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "esnext",
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "electron/main",
+    "electron/preload",
+    "package.json",
+    "vite-assets/**/*.ts",
+    "vite.config.ts",
+    "types/**/*.d.ts"
+  ]
+}

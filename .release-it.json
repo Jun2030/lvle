@@ -1,0 +1,41 @@
+{
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "header": "# 日志记录",
+      "ignoreRecommendedBump": true,
+      "strictSemVer": true,
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          { "type": "feat", "section": "✨功能" },
+          { "type": "fix", "section": "🐛BUG修复" },
+          { "type": "docs", "section": "📝文档" },
+          { "type": "style", "section": "💄样式" },
+          { "type": "refactor", "section": "✈️重构" },
+          { "type": "perf", "section": "⚡优化" },
+          { "type": "test", "section": "✅测试" },
+          { "type": "chore", "section": "🛠️日常", "hidden": true },
+          { "type": "workflow", "section": "⛱️流程改进" }
+        ]
+      }
+    }
+  },
+  "git": {
+    "requireBranch": "main",
+    "commitMessage": "chore: release v${version}",
+    "commit": true,
+    "tag": true,
+    "push": true
+  },
+  "hooks": {
+    "after:bump": "echo 日志更新成功"
+  },
+  "github": {
+    "release": false,
+    "releaseName": "v${version}"
+  },
+  "npm": {
+    "publish": false
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "consoleLog.Random Color": true,
+  "cSpell.words": [
+    "antfu",
+    "asar",
+    "Attributify",
+    "bajiao",
+    "brotli",
+    "commitlint",
+    "composables",
+    "conventionalcommits",
+    "icns",
+    "iconsets",
+    "INDEXEDDB",
+    "infile",
+    "INTLIFY",
+    "localforage",
+    "LOCALSTORAGE",
+    "lvle",
+    "materialdesignicons",
+    "moderndash",
+    "nocheck",
+    "nsis",
+    "Parens",
+    "persistedstate",
+    "pinia",
+    "preinstall",
+    "servernum",
+    "testid",
+    "unhead",
+    "Unocss",
+    "unplugin",
+    "Vite",
+    "vitepress",
+    "VUEJS",
+    "vueuse",
+    "Vutron",
+    "xvfb",
+    "Zego"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.formatOnSave": false,
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.rules.customizations": [
+    {
+      "rule": "style/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-indent",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
+  ],
+  "eslint.validate": [
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "markdown",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "yaml"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": false
+  },
+  "i18n-ally.editor.preferEditor": true,
+  "i18n-ally.localesPaths": "src/locales",
+  "prettier.enable": false,
+  "prettier.htmlWhitespaceSensitivity": "strict",
+  "prettier.printWidth": 160,
+  "prettier.proseWrap": "never",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "workbench.settings.useSplitJSON": true,
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "zh-cn"
+}

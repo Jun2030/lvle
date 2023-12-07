@@ -1,0 +1,4 @@
+demo:
+  count: 'count is '
+  edit: Edit
+  version: Version
